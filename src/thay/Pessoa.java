@@ -1,17 +1,22 @@
 package thay;
-public class Pessoa {
 
-    public static void main(String args[]) {
+public abstract class Pessoa {
 
-        PessoaFisica pessoaFisica = new PessoaFisica();
-        pessoaFisica.setNome("Paulo");
-        pessoaFisica.setCpf("1");
+    private String nome;
 
-        PessoaJuridica pessoaJuridica = new PessoaJuridica();
-        pessoaJuridica.setNome("E1");
-        pessoaJuridica.setCnpj("2");
+    public void imprimirNomePessoa() {
+        System.out.println("Nome da pessoa: " + this.nome);
+    }
 
-        pessoaFisica.imprimirDadosPessoa();
-        pessoaJuridica.imprimirDadosEmpresa();
+    public void imprimirNomeEmpresa() {
+        System.out.println("Nome da empresa: " + this.nome);
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }

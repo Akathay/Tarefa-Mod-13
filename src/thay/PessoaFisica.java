@@ -1,22 +1,16 @@
 package thay;
-public class PessoaFisica {
 
-    private String nome;
+public class PessoaFisica extends Pessoa{
 
     private String cpf;
 
-
-    public void imprimirDadosPessoa() {
-        System.out.println("Nome da pessoa: " + this.nome);
+    public void imprimirCpf() {
         System.out.println("CPF da pessoa: " + this.cpf);
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String nome() {
+        return null;
     }
 
     public String getCpf() {

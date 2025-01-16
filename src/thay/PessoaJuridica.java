@@ -1,22 +1,16 @@
 package thay;
-public class PessoaJuridica {
 
-    private String nome;
-    
+public class PessoaJuridica extends Pessoa{
+
     private String cnpj;
 
-
-    public void imprimirDadosEmpresa() {
-        System.out.println("Nome da empresa: " + this.nome);
+    public void imprimirCnpj() {
         System.out.println("CNPJ da empresa: " + this.cnpj);
     }
 
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String nome() {
+        return null;
     }
 
     public String getCnpj() {
